@@ -63,7 +63,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="557" y="-224"/>
+            <point key="canvasLocation" x="557" y="-471"/>
+        </scene>
+        <!--Navegador View Controller-->
+        <scene sceneID="7Na-pb-NTP">
+            <objects>
+                <viewController id="gKW-14-7GC" customClass="NavegadorViewController" customModule="AppNoticias" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="63t-TH-FJN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="t9K-J2-Mix"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hp-7I-7Of" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1459" y="-227"/>
         </scene>
         <!--Noticias-->
         <scene sceneID="cHE-0k-7gF">
@@ -120,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZb-Ls-aUE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1184" y="366"/>
+            <point key="canvasLocation" x="817" y="612"/>
         </scene>
         <!--Prueba Imagen-->
         <scene sceneID="1EG-Xm-ymN">
@@ -145,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="miD-kh-MDx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1435" y="-293"/>
+            <point key="canvasLocation" x="2078" y="411"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="r9E-Tx-Egj">

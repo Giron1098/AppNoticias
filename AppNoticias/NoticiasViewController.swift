@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 //MARK:- Estructuras necesarias
 
@@ -24,6 +25,8 @@ struct Noticia:Codable {
 struct Fuente:Codable {
     var name:String?
 }
+
+var noticia_url:String?
 
 class NoticiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -72,6 +75,23 @@ class NoticiasViewController: UIViewController, UITableViewDelegate, UITableView
         }
         
         return celda
+    }
+    
+    //Método para identificar qué celda fue seleccionada
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        TBL_V_News.deselectRow(at: indexPath, animated: true)
+        
+        
+        print(noticias[indexPath.row].url!)
+        
+        if let url_noticias = URL(string: noticias[indexPath.row].url!)
+        {
+            let safariVC = SFSafariViewController(url: url_noticias)
+            
+            present(safariVC, animated: true, completion: nil)
+        }
     }
     
 
